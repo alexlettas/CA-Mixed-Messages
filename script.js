@@ -19,6 +19,7 @@ const messageCreation = object => {
     for(let item in character){
         let randomIdx = numberGen(item.length);
         finalMessage[item] = character[item][randomIdx];
+        
     }
     return finalMessage
 }
