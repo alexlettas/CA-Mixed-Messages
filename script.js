@@ -12,13 +12,7 @@ spec: spec
 
 const numberGen = num => {
     return Math.floor(Math.random() * num)
+    
 }
 
-const messageCreation = object =>{
-    let finalMessage = [];
-    for (let key in object) {
-        let randomSelection = numberGen(character[key].length)
-        finalMessage.push
-    }
-}
 
