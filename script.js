@@ -1,14 +1,15 @@
-// create variables with random quotes
-// assign them to a function that logs random quotes?
+// create 3 variables with related theme: D&D Character Generators
+// Assign to an object
+const yourName = ['Razor Wardell', 'Thalytiera', 'Tharran', 'Renia', 'Salrel']
+const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei']
+const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight']
 
-const randomQuotes = ['Life is what you make of it', 
-'What\'s the deal with time? AM I RIGHT!? *pause for laughter*', 
-'You know they tell you an apple a day keeps the doctor away, but my brother Larry is still around']
-
-
-const randomMessage = object => {
-    for(let key in object){
-
-    }
+const character = {
+name: yourName,
+race: race,
+spec: spec
 }
 
+const numberGen = num => {
+    
+}
