@@ -28,8 +28,11 @@ const messageCreation = () => {
 const generateMessage = () => {
     let finalMessage = messageCreation();
     console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}`)
+    
 
 }
 
-generateMessage()
+ generateMessage()
+
+
 
