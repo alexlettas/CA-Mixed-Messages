@@ -1,4 +1,4 @@
-# A WoW class/sentence generator
+# A WoW Character Generator
 
 ## What's the deal?
 
