@@ -6,9 +6,9 @@
 //const specialisation = ['Arcane', 'Frost', 'Fire', 'Blood', 'Unholy', 'Retribution', 'Assasination']
 
 const character = {
-name: ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter'],
-race: ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen'],
-spec: ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman'],
+    name: ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter'],
+    race: ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen'],
+    spec: ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman'],
 }
 
 const numberGen = num => {
@@ -16,7 +16,7 @@ const numberGen = num => {
 }
 
 const messageCreation = () => {
- 
+    
 }
 
 // const generateMessage = () => {
