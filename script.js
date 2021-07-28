@@ -15,14 +15,14 @@ const hunterSpec = ['Beast Mastery', 'Marksmanship', 'Survival']
 const demonHunterSpec = ['Vengeance', 'Havoc']
 const druidSpec = ['Balance', 'Feral', 'Guardian', 'Restoration']
 
-//defining specialisation of each spec
+//defining specialization of each spec
 
 
 const character = {
     name: yourName,
     race: race,
     spec: spec,
-    specialisation: {
+    specialization: {
         mage: mageSpec,
         warlock: warlockSpec,
         priest: priestSpec,
@@ -51,31 +51,34 @@ const specGeneration = character.spec[numberGen(character.spec.length)];
 const findSpec = []
 
     if (specGeneration === 'Mage'){
-        findSpec.push(character.specialisation.mage[numberGen(character.specialisation.mage.length)]);
+        findSpec.push(character.specialization.mage[numberGen(character.specialization.mage.length)]);
     } else if (specGeneration === 'Warlock'){
-        findSpec.push(character.specialisation.warlock[numberGen(character.specialisation.warlock.length)]);
+        findSpec.push(character.specialization.warlock[numberGen(character.specialization.warlock.length)]);
     } else if (specGeneration === 'Priest'){
-        findSpec.push(character.specialisation.priest[numberGen(character.specialisation.priest.length)]);
+        findSpec.push(character.specialization.priest[numberGen(character.specialization.priest.length)]);
     } else if (specGeneration === 'Rogue'){
-        findSpec.push(character.specialisation.rogue[numberGen(character.specialisation.rogue.length)])
+        findSpec.push(character.specialization.rogue[numberGen(character.specialization.rogue.length)])
     } else if (specGeneration === 'Death Knight'){
-        findSpec.push(character.specialisation.deathKnight[numberGen(character.specialisation.deathKnight.length)])
+        findSpec.push(character.specialization.deathKnight[numberGen(character.specialization.deathKnight.length)])
     } else if (specGeneration === 'Paladin'){
-        findSpec.push(character.specialisation.paladin[numberGen(character.specialisation.paladin.length)])
+        findSpec.push(character.specialization.paladin[numberGen(character.specialization.paladin.length)])
     } else if (specGeneration === 'Shaman'){
-        findSpec.push(character.specialisation.shaman[numberGen(character.specialisation.shaman.length)])
+        findSpec.push(character.specialization.shaman[numberGen(character.specialization.shaman.length)])
     } else if (specGeneration === 'Monk'){
-        findSpec.push(character.specialisation.monk[numberGen(character.specialisation.monk.length)])
+        findSpec.push(character.specialization.monk[numberGen(character.specialization.monk.length)])
     } else if (specGeneration === 'Hunter'){
-        findSpec.push(character.specialisation.hunter[numberGen(character.specialisation.hunter.length)])
+        findSpec.push(character.specialization.hunter[numberGen(character.specialization.hunter.length)])
     } else if (specGeneration === 'Demon Hunter'){
-        findSpec.push(character.specialisation.demonHunter[numberGen(character.specialisation.demonHunter.length)])
+        findSpec.push(character.specialization.demonHunter[numberGen(character.specialization.demonHunter.length)])
     } else if (specGeneration === 'Druid'){
-        findSpec.push(character.specialisation.druid[numberGen(character.specialisation.druid.length)])
+        findSpec.push(character.specialization.druid[numberGen(character.specialization.druid.length)])
     } 
 //randomly pick a spec for each class that's picked
 
-const output = `You are ${nameGeneration}, the ${raceGeneration} ${specGeneration}. Your specialisation is ${findSpec.join('')}. Good luck ${nameGeneration} and happy hunting!`
+const output = `You are ${nameGeneration}, the ${raceGeneration} ${specGeneration}. 
+Your specialization is: ${findSpec.join('')}. 
+
+Good luck ${nameGeneration} and happy hunting!`
 //something to print to the console :) 
 
 console.log(output)
