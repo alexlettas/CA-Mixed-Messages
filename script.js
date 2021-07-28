@@ -18,8 +18,8 @@ const numberGen = num => {
 const messageCreation = () => {
     let createMessage = {};
     for(let item in character){
-        let randomIdx = numberGen(item.length);
-        createMessage[item] = character[item][randomIdx];
+        let randomize = numberGen(item.length);
+        createMessage[item] = character[item][randomize];
         
     }
     return createMessage
@@ -27,7 +27,7 @@ const messageCreation = () => {
 
 const generateMessage = () => {
     let finalMessage = messageCreation();
-    console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}, you specialise in ${finalMessage.specialisation}`)
+    console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}`)
     
 
 }
