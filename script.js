@@ -3,12 +3,12 @@
 const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
 const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
 const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman']
-
+//const specialisation = ['Arcane', 'Frost', 'Fire', 'Blood', 'Unholy', 'Retribution', 'Assasination']
 
 const character = {
 name: yourName,
 race: race,
-spec: spec
+spec: spec,
 }
 
 const numberGen = num => {
@@ -27,7 +27,7 @@ const messageCreation = () => {
 
 const generateMessage = () => {
     let finalMessage = messageCreation();
-    console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}`)
+    console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}, you specialise in ${finalMessage.specialisation}`)
     
 
 }
