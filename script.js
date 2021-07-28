@@ -2,15 +2,21 @@
 // Assign to an object
 const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
 const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
-const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman']
+const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman', 'Monk', 'Hunter', 'Demon Hunter', 'Druid']
 //defining core character + class
+
 const mageSpec = ['Arcane', 'Frost', 'Fire']
-const warlockSpec = ['Destruction', 'Demonology', DEFINE]
+const warlockSpec = ['Destruction', 'Demonology', 'Affliction']
 const priestSpec = ['Shadow', 'Holy', 'Discipline']
-const rogueSpec = []
+const rogueSpec = ['Assassination', 'Outlaw', 'Subtlety']
 const deathKnightSpec = ['Blood','Frost', 'Unholy']
-const paladinSpec = []
-const shamanSpec = []
+const paladinSpec = ['Protection, Retribution', 'Holy']
+const shamanSpec = ['Elemental', 'Enhancement', 'Restoration']
+const monkSpec = ['Brewmaster', 'Mistweaver', 'Windwalker']
+const hunterSpec = ['Beast Mastery', 'Marksmanship', 'Survival']
+const demonHunterSpec = ['Vengeance', 'Havoc']
+const druidSpec = ['Balance', 'Feral', 'Guardian', 'Restoration']
+
 //defining specialisation of each spec
 
 
@@ -25,9 +31,11 @@ const character = {
         rogue: rogueSpec,
         deathKnight: deathKnightSpec,
         paladin: paladinSpec,
-        shaman: shamanSpec
-        
-
+        shaman: shamanSpec,
+        monk: monkSpec,
+        hunter: hunterSpec,
+        demonHunter: demonHunterSpec,
+        druid: druidSpec
     }
 }
 //combining all class components into an object
