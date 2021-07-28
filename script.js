@@ -6,7 +6,7 @@
 //const specialisation = ['Arcane', 'Frost', 'Fire', 'Blood', 'Unholy', 'Retribution', 'Assasination']
 
 const character = {
-    name: ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter'],
+    name: ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter','Tarakrit', 'Rikaul'],
     race: ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen'],
     spec: ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman'],
 }
@@ -15,10 +15,14 @@ const numberGen = num => {
     return Math.floor(Math.random() * num)
 }
 
-const messageCreation = () => {
-    
-}
+const nameGeneration = character.name[Math.floor(Math.random() * character.name.length)];
+const raceGeneration = character.race[Math.floor(Math.random() * character.race.length)];
+const specGeneration = character.spec[Math.floor(Math.random() * character.spec.length)];
 
+const output = `You are ${nameGeneration}, the ${raceGeneration} ${specGeneration} `
+
+
+console.log(output)
 // const generateMessage = () => {
 //     let finalMessage = messageCreation();
 //     console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}`)
@@ -29,4 +33,3 @@ const messageCreation = () => {
  //generateMessage()
 
 
-messageCreation()
