@@ -49,6 +49,7 @@ const specGeneration = character.spec[numberGen(character.spec.length)];
 //assigning a variable for each core character component
 
 const findSpec = []
+//a variable which will be allocated a spec based on the if/else statements below
 
     if (specGeneration === 'Mage'){
         findSpec.push(character.specialization.mage[numberGen(character.specialization.mage.length)]);
