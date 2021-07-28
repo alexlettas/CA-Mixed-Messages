@@ -16,11 +16,7 @@ const numberGen = num => {
 }
 
 const messageCreation = () => {
-    for(let item in character){
-        if (item === character.name){
-            console.log(character.name)
-        }
-    } 
+ 
 }
 
 // const generateMessage = () => {
