@@ -1,14 +1,14 @@
 // create 3 variables with related theme: D&D Character Generators
 // Assign to an object
-const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
-const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
-const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman']
+// const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
+// const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
+// const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman']
 //const specialisation = ['Arcane', 'Frost', 'Fire', 'Blood', 'Unholy', 'Retribution', 'Assasination']
 
 const character = {
-name: yourName,
-race: race,
-spec: spec,
+name: ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter'],
+race: ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen'],
+spec: ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman'],
 }
 
 const numberGen = num => {
@@ -16,23 +16,21 @@ const numberGen = num => {
 }
 
 const messageCreation = () => {
-    let createMessage = {};
     for(let item in character){
-        let randomIdx = numberGen(item.length);
-        createMessage[item] = character[item][randomIdx];
-        
-    }
-    return createMessage
+        if (item === character.name){
+            console.log(character.name)
+        }
+    } 
 }
 
-const generateMessage = () => {
-    let finalMessage = messageCreation();
-    console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}, you specialise in ${finalMessage.specialisation}`)
+// const generateMessage = () => {
+//     let finalMessage = messageCreation();
+//     console.log(`You are ${finalMessage.name}, the ${finalMessage.race} ${finalMessage.spec}`)
     
 
-}
-
- generateMessage()
 
 
+ //generateMessage()
 
+
+messageCreation()
