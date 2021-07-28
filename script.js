@@ -1,5 +1,3 @@
-// create 3 variables with related theme: D&D Character Generators
-// Assign to an object
 const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
 const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
 const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman', 'Monk', 'Hunter', 'Demon Hunter', 'Druid']
