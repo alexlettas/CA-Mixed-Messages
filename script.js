@@ -1,3 +1,6 @@
+//A Wow Character + Class Generator
+//By Alex Lettas
+
 const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
 const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
 const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman', 'Monk', 'Hunter', 'Demon Hunter', 'Druid']
@@ -43,9 +46,9 @@ const numberGen = num => {
 }
 //number generator to randomly select values from each item in character object
 
-const nameGeneration = character.name[numberGen(character.name.length)];
-const raceGeneration = character.race[numberGen(character.race.length)];
-const specGeneration = character.spec[numberGen(character.spec.length)];
+const nameGeneration = character.name[numberGen(character.name.length)]
+const raceGeneration = character.race[numberGen(character.race.length)]
+const specGeneration = character.spec[numberGen(character.spec.length)]
 //assigning a variable for each core character component
 
 let findSpec = ''
