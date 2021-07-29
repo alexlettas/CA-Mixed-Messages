@@ -1,8 +1,8 @@
 //A Wow Character + Class Generator
 //By Alex Lettas
 
-const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter']
-const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen']
+const yourName = ['Thalytiera', 'Tharran', 'Renia', 'Saldrel', 'Eamarter', 'Tarakrit', 'Rikaul', 'Alelas']
+const race = ['Nightborne', 'Orc', 'Blood Elf', 'Human', 'Draenei', 'Undead', 'Dwarf', 'Worgen', 'Night Elf','Tauren', 'Troll', 'Goblin', 'Pandaren', 'Gnome','Dark Iron Dwarf', 'Highmounain Tauren', 'Magh\'ar Orc', 'Zandalari Troll', 'Vulpera', 'Void Elf', 'Lightforged Draenei', 'Kul Tiran', 'Mechagnome']
 const spec  = ['Mage', 'Warlock', 'Priest', 'Rogue', 'Death Knight', 'Paladin', 'Shaman', 'Monk', 'Hunter', 'Demon Hunter', 'Druid']
 //defining core character + class
 
