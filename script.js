@@ -48,36 +48,50 @@ const raceGeneration = character.race[numberGen(character.race.length)];
 const specGeneration = character.spec[numberGen(character.spec.length)];
 //assigning a variable for each core character component
 
-const findSpec = []
-//a variable which will be allocated a spec based on the if/else statements below
+let findSpec = ''
+//a variable which will be allocated a spec based on the switch statements below
 
-    if (specGeneration === 'Mage'){
-        findSpec.push(character.specialization.mage[numberGen(character.specialization.mage.length)])
-    } else if (specGeneration === 'Warlock'){
-        findSpec.push(character.specialization.warlock[numberGen(character.specialization.warlock.length)])
-    } else if (specGeneration === 'Priest'){
-        findSpec.push(character.specialization.priest[numberGen(character.specialization.priest.length)])
-    } else if (specGeneration === 'Rogue'){
-        findSpec.push(character.specialization.rogue[numberGen(character.specialization.rogue.length)])
-    } else if (specGeneration === 'Death Knight'){
-        findSpec.push(character.specialization.deathKnight[numberGen(character.specialization.deathKnight.length)])
-    } else if (specGeneration === 'Paladin'){
-        findSpec.push(character.specialization.paladin[numberGen(character.specialization.paladin.length)])
-    } else if (specGeneration === 'Shaman'){
-        findSpec.push(character.specialization.shaman[numberGen(character.specialization.shaman.length)])
-    } else if (specGeneration === 'Monk'){
-        findSpec.push(character.specialization.monk[numberGen(character.specialization.monk.length)])
-    } else if (specGeneration === 'Hunter'){
-        findSpec.push(character.specialization.hunter[numberGen(character.specialization.hunter.length)])
-    } else if (specGeneration === 'Demon Hunter'){
-        findSpec.push(character.specialization.demonHunter[numberGen(character.specialization.demonHunter.length)])
-    } else if (specGeneration === 'Druid'){
-        findSpec.push(character.specialization.druid[numberGen(character.specialization.druid.length)])
-    } 
+ switch(specGeneration){
+     case 'Mage':
+         findSpec = character.specialization.mage[numberGen(character.specialization.mage.length)]
+         break;
+    case 'Warlock':
+        findSpec = character.specialization.warlock[numberGen(character.specialization.warlock.length)]
+        break;
+        case 'Priest':
+        findSpec = character.specialization.priest[numberGen(character.specialization.priest.length)]
+        break;
+        case 'Rogue':
+        findSpec = character.specialization.rogue[numberGen(character.specialization.rogue.length)]
+        break;
+        case 'Death Knight':
+        findSpec = character.specialization.deathKnight[numberGen(character.specialization.deathKnight.length)]
+        break;
+        case 'Paladin':
+        findSpec = character.specialization.paladin[numberGen(character.specialization.paladin.length)]
+        break;
+        case 'Shaman':
+        findSpec = character.specialization.shaman[numberGen(character.specialization.shaman.length)]
+        break;
+        case 'Monk':
+        findSpec = character.specialization.monk[numberGen(character.specialization.monk.length)]
+        break;
+        case 'Hunter':
+        findSpec = character.specialization.hunter[numberGen(character.specialization.hunter.length)]
+        break;
+        case 'Demon Hunter':
+        findSpec = character.specialization.demonHunter[numberGen(character.specialization.demonHunter.length)]
+        break;
+        case 'Druid':
+        findSpec = character.specialization.druid[numberGen(character.specialization.druid.length)]
+                                                    
+ }
 //randomly pick a spec for each class that's picked
 
+
+
 const output = `You are ${nameGeneration}, the ${raceGeneration} ${specGeneration}. 
-Your specialization is: ${findSpec.join('')}. 
+Your specialization is: ${findSpec}. 
 
 Good luck ${nameGeneration} and happy hunting!`
 //something to print to the console :) 
