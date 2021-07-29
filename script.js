@@ -52,11 +52,11 @@ const findSpec = []
 //a variable which will be allocated a spec based on the if/else statements below
 
     if (specGeneration === 'Mage'){
-        findSpec.push(character.specialization.mage[numberGen(character.specialization.mage.length)]);
+        findSpec.push(character.specialization.mage[numberGen(character.specialization.mage.length)])
     } else if (specGeneration === 'Warlock'){
-        findSpec.push(character.specialization.warlock[numberGen(character.specialization.warlock.length)]);
+        findSpec.push(character.specialization.warlock[numberGen(character.specialization.warlock.length)])
     } else if (specGeneration === 'Priest'){
-        findSpec.push(character.specialization.priest[numberGen(character.specialization.priest.length)]);
+        findSpec.push(character.specialization.priest[numberGen(character.specialization.priest.length)])
     } else if (specGeneration === 'Rogue'){
         findSpec.push(character.specialization.rogue[numberGen(character.specialization.rogue.length)])
     } else if (specGeneration === 'Death Knight'){
